@@ -61,9 +61,7 @@ class Matrix {
   
   T& operator()(const int64_t& ind, const int64_t& jin) { return matrix_[ind][jin]; }
   
-  const T& operator()(const int64_t& ind, const int64_t& jin) const {
-    return matrix_[ind][jin];
-  }
+  const T& operator()(const int64_t& ind, const int64_t& jin) const { return matrix_[ind][jin]; }
   
   bool operator==(const Matrix& other) const { return matrix_ == other.matrix_; }
 };
